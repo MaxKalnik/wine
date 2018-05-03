@@ -4,7 +4,7 @@
   position: relative
   background-position: center
   background-size: cover
-  height: 568px
+  height: 570px
   padding: 32px 45px
   display: flex
   flex-direction: column
@@ -21,7 +21,7 @@
     background-position center
 
   +respond-to($medium)
-    height: 568px
+    height: 570px
     background-image url("images/main_pic_1020.png")
     background-image: -webkit-image-set(url(images/main_pic_1020.png) 1x, url(images/main_pic_1020@2x.png) 2x)
     background-repeat no-repeat
@@ -30,16 +30,21 @@
 
   +respond-to($small)
     padding: 32px 25px 42px 25px
-    background-image url("images/main_pic_1020.png")
-    background-image: -webkit-image-set(url(images/main_pic_1020.png) 1x, url(images/main_pic_1020@2x.png) 2x)
+    background-image url("images/main_pic_780.png")
+    background-image: -webkit-image-set(url(images/main_pic_780.png) 1x, url(images/main_pic_780@2x.png) 2x)
     background-position center
 
   +respond-to($xsmall)
-    height: 454px
+    height: 480px
     padding: 16px 12px 36px 12px
 
   +respond-to(494px)
-    background-position: top
+    background-position: 20% 100%
+
+  +respond-to($xxsmall)
+    background-image url("images/main_pic_320.png")
+    background-image: -webkit-image-set(url(images/main_pic_320.png) 1x, url(images/main_pic_320@2x.png) 2x)
+    background-position center
 
 .main-block__mask
   position: absolute

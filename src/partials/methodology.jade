@@ -1,0 +1,25 @@
+h2.section__title Methodology
+.methodology__content
+  img.methodology__img(src='images/svg/methodology-icon.svg')
+  .methodology__text
+    p.methodology__text-item
+      | RewardExpert started by accessing the Permitted Wine Producers Database provided by the U.S. Department of the Treasury Alcohol and Tobacco Trade Bureau and compiling a comprehensive list of all wineries and vineyards in the U.S. as of March 2018. Then, we calculated a total number of wineries in each three-digit zip code area and computed the number of wineries per capita using U.S. Census Bureau population data. We obtained a data set comprising 2.02 million wine reviews scraped from CellarTracker by researchers at Stanford University. We cross-referenced winery ownership and operational names against the wine review data set’s wine name field and calculated average ratings for each winery. We then calculated an average rating for all wineries within each three-digit zip code area.
+
+    p.methodology__text-item
+      | Our ranking was calculated on the basis of wineries per capita (single weight) and average wine rating (triple weight), both expressed as a percentile ranking.
+
+.methodology__sources
+  h3.methodology__sources-title
+    | Sources:
+
+  ul.methodology__sources-list
+    li.methodology__sources-list-item
+      a.methodology__sources-list-link(href='https://www.ttb.gov/wine/index.shtml')
+        | U.S. Department of the Treasury, Alcohol and Tobacco Trade Bureau, Permitted Wine Producers Database.
+
+    li.methodology__sources-list-item
+      a.methodology__sources-list-link(href='https://data.world/petergensler/cellartracker-reviews')
+        | CellarTracker Wine Reviews
+
+    li.methodology__sources-list-item
+      | U.S. Census Bureau, GIS boundary data and population estimates.

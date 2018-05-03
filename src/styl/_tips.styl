@@ -1,0 +1,72 @@
+.tips
+  position: relative
+  display: flex
+  flex-direction: column
+  margin: 0 auto
+  color: $color-white
+
+.tips__upper-text
+  position: relative
+  padding-left: 126px
+  margin-bottom: 32px
+
+  +respond-to($xsmall)
+    padding-left: 0
+
+.tips__wine-icon
+  position: absolute
+  width: 86px
+  height: 87px
+  left: 0
+  top: 0
+
+  +respond-to($xsmall)
+    position: static
+    margin-bottom: 24px
+    margin-left: auto
+    margin-right: auto
+
+.tips__item
+  padding: 24px
+  background-color: alpha(#FEDFDD, 0.5)
+  margin-bottom: 32px
+  border: 1px solid alpha(#D44663, 0.3)
+  border-radius: 3px
+  &:last-child
+    margin-bottom: 0
+
+.tips__item-title
+  position: relative
+  display: flex
+  align-items: center
+  font-size: 18px
+  line-height: 26px
+  font-weight: 600
+  margin-bottom: 24px
+
+.tips__item-title--dining
+  &:before
+    content: ''
+    width: 32px
+    height: 32px
+    margin-right: 12px
+    background: url('images/svg/icon_dining.svg') center no-repeat
+
+.tips__item-title--entertainment
+  &:before
+    content: ''
+    width: 32px
+    height: 32px
+    margin-right: 12px
+    background: url('images/svg/icon_entertainment.svg') center no-repeat
+
+.tips__item-title--supermarkets
+  &:before
+    content: ''
+    width: 32px
+    height: 32px
+    margin-right: 12px
+    background: url('images/svg/icon_supermarkets.svg') center no-repeat
+
+.tips__item-text
+  @extend .main-text

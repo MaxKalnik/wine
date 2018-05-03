@@ -1,0 +1,115 @@
+.notes
+  position: relative
+  display: flex
+  flex-direction: row
+  border: 1px solid #fee8a0
+  background-color: #fffdf6
+  padding: 32px
+
+  +respond-from($large)
+    padding-bottom: 100px
+
+  +respond-to($xsmall)
+    flex-direction: column
+    padding: 12px
+
+.notes-title
+  margin-bottom: 24px
+  font-size: 23px
+  line-height: 32px
+  font-weight: 600
+
+  +respond-to($xsmall)
+    margin-bottom: 16px
+    font-size: 20px
+
+.notes-item
+  width: 500px
+  margin-right: 66px
+  &:last-child
+    margin-right: 0
+
+  +respond-from($large)
+    width: 540px
+    margin-right: 96px
+    &:last-child
+      margin-right: 0
+
+  +respond-to($medium)
+    width: 400px
+    margin-right: 48px
+    &:last-child
+      margin-right: 0
+
+  +respond-to($small)
+    width: 300px
+    margin-right: 28px
+    &:last-child
+      margin-right: 0
+
+  +respond-to($xsmall)
+    width: 100%
+    margin-right: 0
+    margin-bottom: 24px
+    &:last-child
+      margin-bottom: 0
+
+.notes-text
+  @extend .main-text
+  padding-left: 48px
+  position: relative
+
+  &:before
+    content: '1'
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 16px
+    font-weight: 700
+    color: #FDC84E
+    position: absolute
+    left: 0
+    top: 0
+    width: 32px
+    height: 32px
+    border: 2px solid #FDC84E
+    border-radius: 50%
+
+.notes-text--second
+  &:before
+    content: '2'
+
+.notes__icon
+  position: absolute
+  left: 0
+  bottom: 0
+  width: 537px
+  height: 260px
+
+  +respond-to($medium)
+    width: 436px
+    height: auto
+
+  +respond-to($small)
+    width: 316px
+    height: auto
+
+  +respond-to($xsmall)
+    position: static
+    width: 286px
+    margin-top: 40px
+    margin-bottom: 25px
+    margin-left: -12px
+
+.notes__icon--desktop
+  +respond-to($small)
+    display: none
+
+.notes__icon--mob
+  display: none
+  width: 274px
+  height: auto
+
+  +respond-to($small)
+    display: block
+    bottom: 100px

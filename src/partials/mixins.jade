@@ -52,7 +52,8 @@ mixin states_rank(stateData)
                 | Top Winery:
 
               .rankings__item-table-value
-                = stateItem.topWinery
+                a.rankings__item-table-link(href='#{stateItem.topWineryLink}')
+                  = stateItem.topWinery
 
         .rankings__item-content
           .rankings__item-num-block
